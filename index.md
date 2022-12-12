@@ -15,7 +15,7 @@ For this project, I explored what a good analytics PowerPoint presentation shoul
 
 ---
 #### [External Link Project](https://www.linkedin.com/pulse/digging-restaurant-delivery-sales-kim-gasgarth)
-[<img src="images/21 Days To Data Challenge What I've Learned Cover.png?raw=true"/>](https://www.linkedin.com/pulse/what-i-learned-21-days-data-avery-smith)
+[<img src="images/Restaurant Delivery Service Analytics.jpg?raw=true"/>](https://www.linkedin.com/pulse/digging-restaurant-delivery-sales-kim-gasgarth)
 This was my first data analysis project on restaurant delivery services - something that I use weekly! 
 
 ---
