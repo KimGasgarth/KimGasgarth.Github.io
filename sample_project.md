@@ -1,4 +1,5 @@
-## This can be a template for an internal prject
+# Massachusetts Public Schools Analysis
+## > “Public education is an investment in our future.” Matt Blunt
 
 **Project description:** You can use this template to create projects in the future. Simply duplicate the page and change the text and images. 
 
