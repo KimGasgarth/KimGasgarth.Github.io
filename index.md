@@ -4,9 +4,9 @@
 
 ### General Analytics Projects
 
-#### [Internal Blog Post Project](/sample_project)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
+#### [Massachusetts Public Schools Analysis](/sample_project)
+<img src="images/Massachusetts Public School Analysis.png?raw=true"/>
+In this analysis, I looked at the data from the public schools in Massachusetts to determine which schools are struggling the most, which schools had the best math programs and how class size affected college admission. 
 
 ---
 #### [Linked File Project](/files/Day 12 - 21 days to data.pdf)
