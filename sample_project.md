@@ -28,4 +28,6 @@ I also looked at 4th grade math levels and determined that there were only 4 sch
 
 <img src="images/MA 4th grade math.jpg?raw=true"/>
 
+### 4. Conclusion
 
+Schools with a lower than 50% graduation rate need to work on getting more students to graduate - and it's important to look and see why their rates are so low. It's also important to note that only 4 schools passed the 4th grade math tests, and more attention needs to go into preparing the students for their tests. Lastly, I would suggest concentrating more on economically disadvantaged students rather than reducing class sizes as a way to increase college attendance. 
