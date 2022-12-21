@@ -14,8 +14,18 @@ When I was growing up, I absolutely loved school and learning new things. My fam
 
 The dataset is included on my [Tableau](https://public.tableau.com/app/profile/kim.gasgarth/viz/MAPublicSchoolProject/MassachusettsEducationOverview) page and consisted of 1861 schools and 953,748 students. 
 
-### 3. You can add any images you'd like. 
+### 3. Analysis
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+The first thing that needed to be addressed was figuring out which schools out of the total 1,861 had the lowest graduation rate, as seen below. There were 10 schools with a 100% rate of graduation, compared to the bottom 37 schools that had less than 50% graduation.
+
+<img src="images/MA low grad.jpg?raw=true"/>
+
+I’ve always heard that the class size had a huge impact on student learning. By looking at the next visualization, you can see that economic disadvantage had more impact on their college attendance. 
+
+<img src="images/MA class size.jpg?raw=true"/>
+
+I also looked at 4th grade math levels and determined that there were only 4 schools that had a passing score. This was very surprising to me, and definitely something that needs to be investigated further, as shown below.
+
+<img src="images/MA 4th grade math.jpg?raw=true"/>
 
 
