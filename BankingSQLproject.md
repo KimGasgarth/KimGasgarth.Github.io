@@ -1,5 +1,4 @@
 # World Bank Loan Analysis
-<img src="images/World Bank Loan Analysis.jpg?raw=true"/>
 
 As someone who worked closely with banks in my job as the controller of a Ford dealership, I was really excited to learn how to use SQL to analyze loan data. We were constantly checking the loan rates and changes - paying special attention to outstanding loans and contracts in transit which affect the cash flow. In this project, I've been hired as a data analyst to look over the loans from the IDA and answer the following questions:
 
@@ -26,7 +25,9 @@ To look at this data, I uploaded the CSV file to bit.io, which is a PostgreSQL d
 
 ### 3. Analysis
 
-The first thing that needed to be addressed was figuring out which schools out of the total 1,861 had the lowest graduation rate, as seen below. There were 10 schools with a 100% rate of graduation, compared to the bottom 37 schools that had less than 50% graduation.
+By using the COUNT function, I was able to determine that there are 1,109,994 rows of data that need to be analyzed.
+```SQL
+SELECT COUNT (*) FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data.csv";
 
 <img src="images/MA low grad.jpg?raw=true"/>
 
