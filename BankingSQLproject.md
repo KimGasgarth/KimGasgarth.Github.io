@@ -51,7 +51,13 @@ SELECT "borrower" FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data"
 where "Last Repayment Date" =(SELECT MAX ("Last Repayment Date") 
 FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data" ) LIMIT 1;
 ```
+Finally I looked at the country with the most loans. It makes sense that Bangladesh is again at the top of the list. 
+```SQL
+SELECT "country", MAX ("Due to IDA") FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data" 
+GROUP BY "country";
+```
 
+<img src="images/SQL Bank max by country.jpg?raw=true"/>
 
 
 ### 4. Conclusion
