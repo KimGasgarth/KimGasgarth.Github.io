@@ -62,6 +62,7 @@ GROUP BY "country";
 
 ### 4. Conclusion
 
+The IDA aims to reduce poverty by providing financing and policy advice for programs that boost economic growth, build resilience, and improve the lives of poor people around the world. There are 75 countries that are eligible to receive funds, with Bangladesh topping the group. 
  
 
 If you liked my analysis, please add me on [LinkedIn](https://www.linkedin.com/in/kim-gasgarth/)
