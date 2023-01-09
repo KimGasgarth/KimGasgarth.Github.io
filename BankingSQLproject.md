@@ -28,8 +28,9 @@ To look at this data, I uploaded the CSV file to bit.io, which is a PostgreSQL d
 By using the COUNT function, I was able to determine that there are 1,109,994 rows of data that need to be analyzed.
 ```SQL
 SELECT COUNT (*) FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data.csv";
+```
 
-<img src="images/MA low grad.jpg?raw=true"/>
+
 
 I’ve always heard that the class size had a huge impact on student learning. By looking at the next visualization, you can see that economic disadvantage had more impact on their college attendance. 
 
