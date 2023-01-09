@@ -38,6 +38,7 @@ To find the total transactions per country I counted and grouped the data by cou
 SELECT "country", COUNT(*) FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data.csv" GROUP BY "country";
 ```
 As you can see below, Bangladesh had the most transactions, with Cape Verde having the least. 
+
 <img src="images/SQL Bank by country.jpg?raw=true"/>
 
 
