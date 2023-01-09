@@ -2,7 +2,7 @@
 
 As someone who worked closely with banks in my job as the controller of a Ford dealership, I was really excited to learn how to use SQL to analyze loan data. We were constantly checking the loan rates and changes - paying special attention to outstanding loans and contracts in transit which affect the cash flow. In this project, I've been hired as a data analyst to look over the loans from the IDA and answer the following questions:
 
-1. How many total transactions
+1. How many total transactions and how many from Nicaragua
 2. How many total transactions per country
 3. Maximum owed to IDA
 4. Most recent payment
@@ -29,16 +29,17 @@ By using the COUNT function, I was able to determine that there are 1,109,994 ro
 ```SQL
 SELECT COUNT (*) FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data.csv";
 ```
+Then, I specifically wanted to know how much of the data was from Nicaragua. I used the following code to see that there were 13,704 rows. 
+```SQL
+SELECT COUNT (*) FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data.csv" WHERE country = 'Nicaragua';
+```
+To find the total transactions per country I counted and grouped the data by country. 
+```SQL
+SELECT "country", COUNT(*) FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data.csv" GROUP BY "country";
+```
+As you can see below, Bangladesh had the most transactions, with Cape Verde having the least. 
+<img src="images/SQL Bank by country.jpg?raw=true"/>
 
-
-
-I’ve always heard that the class size had a huge impact on student learning. By looking at the next visualization, you can see that economic disadvantage had more impact on their college attendance. 
-
-<img src="images/MA class size.jpg?raw=true"/>
-
-I also looked at 4th grade math levels and determined that there were only 4 schools that had a passing score. This was very surprising to me, and definitely something that needs to be investigated further, as shown below.
-
-<img src="images/MA 4th grade math.jpg?raw=true"/>
 
 ### 4. Conclusion
 
