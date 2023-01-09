@@ -1,5 +1,5 @@
 # World Bank Loan Analysis
-## 
+<img src="images/World Bank Loan Analysis.jpg?raw=true"/>
 
 As someone who worked closely with banks in my job as the controller of a Ford dealership, I was really excited to learn how to use SQL to analyze loan data. We were constantly checking the loan rates and changes - paying special attention to outstanding loans and contracts in transit which affect the cash flow. In this project, I've been hired as a data analyst to look over the loans from the IDA and answer the following questions:
 
@@ -14,8 +14,6 @@ As someone who worked closely with banks in my job as the controller of a Ford d
 There were 1,109,994 rows of total data - which held 13,704 rows of data for Nicaragua. Bangladesh had the most transactions, which Cape Verde having the least. The maximum owed to IDA is 793,256,127.64 and the last payment recorded was on 12/31/14 from the borrower, Ministry of Finance. Bangladesh again came in first place with 1,885,305,576,348.22 in loans.
 
 
-
-
 ### 2. The International Development Association (IDA) Data
 
 The International Development Association (IDA) credits are public and publicly guaranteed debt extended by the World Bank Group. IDA provides development credits, grants and guarantees to its recipient member countries to help meet their development needs. Credits from IDA are at concessional rates. 
@@ -25,8 +23,6 @@ You can find the data set [HERE]
 
 To look at this data, I uploaded the CSV file to bit.io, which is a PostgreSQL database that's free to use for 72 hours.
 
-
-<img src="images/MA Edu Project.jpg?raw=true"/>
 
 ### 3. Analysis
 
