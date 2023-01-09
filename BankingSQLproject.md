@@ -41,6 +41,18 @@ As you can see below, Bangladesh had the most transactions, with Cape Verde havi
 
 <img src="images/SQL Bank by country.jpg?raw=true"/>
 
+The max owed to IDA, 793,256,127.64, was easily found with the MAX function.
+```SQL
+SELECT MAX ("Due to IDA") FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data.csv;
+```
+To find the most recent payment, I needed to investigate the last repayment date and the borrower. The last date was 12/31/14 with the Ministry of Finance
+```SQL
+SELECT "borrower" FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data" 
+where "Last Repayment Date" =(SELECT MAX ("Last Repayment Date") 
+FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data" ) LIMIT 1;
+```
+
+
 
 ### 4. Conclusion
 
