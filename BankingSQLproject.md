@@ -57,7 +57,7 @@ SELECT "country", MAX ("Due to IDA") FROM "IDA_Statement_Of_Credits_and_Grants_-
 GROUP BY "country";
 ```
 
-<img src="images/SQL Bank max by country.jpg?raw=true"/>
+<img src="images/SQL Bank MAX country.jpg?raw=true"/>
 
 Finally, I was able to get the average service charge rate of 0.778 for the loans by using the AVG function. 
 ```SQL
