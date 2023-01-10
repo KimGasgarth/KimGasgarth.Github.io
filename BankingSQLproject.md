@@ -51,7 +51,7 @@ SELECT "borrower" FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data"
 where "Last Repayment Date" =(SELECT MAX ("Last Repayment Date") 
 FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data" ) LIMIT 1;
 ```
-I looked at the country with the most loans next. It makes sense that India is again at the top of the list. 
+I looked at the country with the most in loans next. It makes sense that India is again at the top of the list. 
 ```SQL
 SELECT "country", MAX ("Due to IDA") FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data" 
 GROUP BY "country";
@@ -59,7 +59,7 @@ GROUP BY "country";
 
 <img src="images/SQL Bank max by country.jpg?raw=true"/>
 
-Finally, I was able to get the average service charge rate of 0.778 for the loans by using the aAVG function. 
+Finally, I was able to get the average service charge rate of 0.778 for the loans by using the AVG function. 
 ```SQL
 SELECT AVG("Service Charge Rate") FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data";
 ```
