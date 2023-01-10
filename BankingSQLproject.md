@@ -11,7 +11,7 @@ As someone who worked closely with banks in my job as the controller of a Ford d
 
 ### 1. Findings
 
-There were 1,109,994 rows of total data - which held 13,704 rows of data for Nicaragua. Bangladesh had the most transactions, which Cape Verde having the least. The maximum owed to IDA is 793,256,127.64 and the last payment recorded was on 12/31/14 from the borrower, Ministry of Finance. Bangladesh again came in first place with 1,885,305,576,348.22 in loans and the average service charge rate was 0.778.
+There were 1,109,994 rows of total data - which held 13,704 rows of data for Nicaragua. India and Bangladesh had the most transactions with 58339 and 40980 respectively.  The maximum owed to IDA is 793,256,127.64 and the last payment recorded was on 12/31/14 from the borrower, Ministry of Finance. Bangladesh again came in first place with 1,885,305,576,348.22 in loans and the average service charge rate was 0.778.
 
 
 ### 2. The International Development Association (IDA) Data
@@ -38,7 +38,7 @@ To find the total transactions per country I counted and grouped the data by cou
 ```SQL
 SELECT "country", COUNT(*) FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data.csv" GROUP BY "country";
 ```
-As you can see below, Bangladesh had the most transactions, with Cape Verde having the least. 
+As you can see below, India and Bangladesh had the most transactions. 
 
 <img src="images/SQL Bank by country.jpg?raw=true"/>
 
@@ -52,7 +52,7 @@ SELECT "borrower" FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data"
 where "Last Repayment Date" =(SELECT MAX ("Last Repayment Date") 
 FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data" ) LIMIT 1;
 ```
-I looked at the country with the most loans next. It makes sense that Bangladesh is again at the top of the list. 
+I looked at the country with the most loans next. It makes sense that India is again at the top of the list. 
 ```SQL
 SELECT "country", MAX ("Due to IDA") FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data" 
 GROUP BY "country";
