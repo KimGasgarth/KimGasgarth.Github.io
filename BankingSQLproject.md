@@ -18,8 +18,7 @@ There were 1,109,994 rows of total data - which held 13,704 rows of data for Nic
 
 The International Development Association (IDA) credits are public and publicly guaranteed debt extended by the World Bank Group. IDA provides development credits, grants and guarantees to its recipient member countries to help meet their development needs. Credits from IDA are at concessional rates. 
 
-You can find the data set [HERE]
-(https://finances.worldbank.org/Loans-and-Credits/IDA-Statement-Of-Credits-and-Grants-Historical-Dat/tdwh-3krx)
+You can find the data set [HERE](https://finances.worldbank.org/Loans-and-Credits/IDA-Statement-Of-Credits-and-Grants-Historical-Dat/tdwh-3krx)
 
 To look at this data, I uploaded the CSV file to bit.io, which is a PostgreSQL database that's free to use for 72 hours.
 
