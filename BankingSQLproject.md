@@ -11,25 +11,25 @@ As someone who worked closely with banks in my job as the controller of a Ford d
 
 ### 1. Findings
 
-There were 1,109,994 rows of total data - which held 13,704 rows of data for Nicaragua. India and Bangladesh had the most transactions with 58339 and 40980 respectively.  The maximum owed to IDA is 793,256,127.64 and the last payment recorded was on 12/31/14 from the borrower, Ministry of Finance. Bangladesh again came in first place with 1,885,305,576,348.22 in loans and the average service charge rate was 0.778.
+There were **1,109,994** rows of total data - which held **13,704** rows of data for Nicaragua. **India** and Bangladesh had the most transactions with **58339** and 40980 respectively.  The maximum owed to IDA is **793,256,127.64** and the last payment recorded was on **12/31/14** from the borrower, **Ministry of Finance**. **Bangladesh** again came in first place with **1,885,305,576,348.22** in loans and the average service charge rate was **0.778**.
 
 
 ### 2. The International Development Association (IDA) Data
 
 The International Development Association (IDA) credits are public and publicly guaranteed debt extended by the World Bank Group. IDA provides development credits, grants and guarantees to its recipient member countries to help meet their development needs. Credits from IDA are at concessional rates. 
 
-You can find the data set [HERE](https://finances.worldbank.org/Loans-and-Credits/IDA-Statement-Of-Credits-and-Grants-Historical-Dat/tdwh-3krx)
+You can find the data set **[HERE](https://finances.worldbank.org/Loans-and-Credits/IDA-Statement-Of-Credits-and-Grants-Historical-Dat/tdwh-3krx)**
 
-To look at this data, I uploaded the CSV file to bit.io, which is a PostgreSQL database that's free to use for 72 hours.
+To look at this data, I uploaded the CSV file to **bit.io**, which is a PostgreSQL database that's free to use for 72 hours.
 
 
 ### 3. Analysis
 
-By using the COUNT function, I was able to determine that there are 1,109,994 rows of data that need to be analyzed.
+By using the COUNT function, I was able to determine that there are **1,109,994** rows of data that need to be analyzed.
 ```SQL
 SELECT COUNT (*) FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data.csv";
 ```
-Then, I specifically wanted to know how much of the data was from Nicaragua. I used the following code to see that there were 13,704 rows. 
+Then, I specifically wanted to know how much of the data was from Nicaragua. I used the following code to see that there were **13,704** rows. 
 ```SQL
 SELECT COUNT (*) FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data.csv" WHERE country = 'Nicaragua';
 ```
@@ -37,21 +37,21 @@ To find the total transactions per country I counted and grouped the data by cou
 ```SQL
 SELECT "country", COUNT(*) FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data.csv" GROUP BY "country";
 ```
-As you can see below, India and Bangladesh had the most transactions. 
+As you can see below, **India and Bangladesh had the most transactions**. 
 
 <img src="images/SQL Bank by country.jpg?raw=true"/>
 
-The max owed to IDA, 793,256,127.64, was easily found with the MAX function.
+The max owed to IDA, **793,256,127.64**, was easily found with the MAX function.
 ```SQL
 SELECT MAX ("Due to IDA") FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data.csv;
 ```
-To find the most recent payment, I needed to investigate the last repayment date and the borrower. The last date was 12/31/14 with the Ministry of Finance
+To find the most recent payment, I needed to investigate the last repayment date and the borrower. The last date was **12/31/14 with the Ministry of Finance.**
 ```SQL
 SELECT "borrower" FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data" 
 where "Last Repayment Date" =(SELECT MAX ("Last Repayment Date") 
 FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data" ) LIMIT 1;
 ```
-I looked at the country with the most in loans next. It makes sense that India is again at the top of the list. 
+I looked at the country with the most in loans next. It makes sense that **India** is again at the top of the list. 
 ```SQL
 SELECT "country", MAX ("Due to IDA") FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data" 
 GROUP BY "country";
@@ -59,7 +59,7 @@ GROUP BY "country";
 
 <img src="images/SQL Bank MAX country.jpg?raw=true"/>
 
-Finally, I was able to get the average service charge rate of 0.778 for the loans by using the AVG function. 
+Finally, I was able to get the **average service charge rate of 0.778** for the loans by using the AVG function. 
 ```SQL
 SELECT AVG("Service Charge Rate") FROM "IDA_Statement_Of_Credits_and_Grants_-_Historical_Data";
 ```
@@ -70,5 +70,5 @@ SELECT AVG("Service Charge Rate") FROM "IDA_Statement_Of_Credits_and_Grants_-_Hi
 The IDA aims to reduce poverty by providing financing and policy advice for programs that boost economic growth, build resilience, and improve the lives of poor people around the world. There are 75 countries that are eligible to receive funds, with Bangladesh topping the group. With an average service charge rate of 0.778, people are able to get loans to help with building new businesses and improving their quality of life. To continue doing business, I would suggest watching all the outstanding loans and consider moving rates downward if people are still unable to pay them back.  
  
 
-If you liked my analysis, please add me on [LinkedIn](https://www.linkedin.com/in/kim-gasgarth/)
+If you liked my analysis, please add me on **[LinkedIn](https://www.linkedin.com/in/kim-gasgarth/)**
 
